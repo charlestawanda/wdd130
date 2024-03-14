@@ -56,3 +56,9 @@ footer
     border-top: 15px solid #000;
     text-align: center;
 }
+main ul
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
