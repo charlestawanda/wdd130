@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+:root {
+  --primary-color: #c77dff;
+  --secondary-color: #240046;
+  --accent1-color: #e0aaff;
+  --accent2-color: #9e9eea;
+
+  --heading-font: "Rock Salt", hand;
+  --paragraph-font: "Original Surfer", sans-serif;
+
+  --nav-background-color: #bb63ee;
+  --nav-link-color: #9d4edd;
+  --nav-hover-link-color: rgb(58, 58, 155);
+  --nav-hover-background-color: #be60f5;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent2-color);
+}
+
+p {
+  padding: 20px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1
+{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: rgba(rgb(38, 105, 136), rgb(5, 10, 5), 17, 0.6);
+}
+.hero article
+{
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+.hero article img{
+    float: right;
+    width: auto;
+    height: 10rem;
+}
+
