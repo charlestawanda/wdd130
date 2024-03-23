@@ -28,9 +28,36 @@ h1, h2, h3, h4, h5, h6{
 }
 
 header {
+  max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 7fr;
   padding: 20px;
-  background-color: var(--accent2-color);
+  background-color: var(--secondary-color);
 }
+header img {
+  margin: 0 0.5rem;
+  width: 100px;
+  height: auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  border: dotted 4px black;
+  background-color: var(--nav-background-color);
+}
+header nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  border-right: dotted 4px var(--accent1-color);
+  padding-right: 40px;
+}
+header nav a:last-of-type {
+  border-right: none;
+}
+
 
 p {
   padding: 20px;
@@ -57,6 +84,19 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+figure {
+  display: grid;
+  align-self: baseline;
+  max-width: 120px;
+  max-height: 130px;
+}
+figcaption {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  font: var(--paragraph-font);
+  padding: 2px;
+  text-align: center;
+}
 .hero img {
     display: block;
     width: 100%;
@@ -79,5 +119,46 @@ nav a:hover {
     float: right;
     width: auto;
     height: 10rem;
+}
+#history {
+  padding-top: 25px;
+  margin: 5px;
+}
+
+#history h2 {
+  text-align: center;
+}
+
+#history p:last-of-type {
+  padding-top: 0;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#adventure {
+  display: grid;
+  align-items: center;
+  border: thin var(--accent1-color) solid;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  background-color: var(--secondary-color);
+}
+
+#adventure h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-column: 1/6;
+  text-align: center;
+}
+
+#adventure img {
+  width: 150px;
+  max-height: 120px;
+}
+
+.sociallinks {
+  justify-self: last baseline;
+  background-color: inherit;
+  color: var(--nav-link-color);
 }
 
