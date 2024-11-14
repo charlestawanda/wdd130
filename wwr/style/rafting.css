@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+/* Define color scheme using CSS variables */
+:root {
+    --primary-color: #0056b3; /* Primary color */
+    --secondary-color: #ff9900; /* Secondary color */
+    --accent-color: #ffcc00; /* Accent color */
+    --text-color: #3982f0; /* Text color */
+    --heading-color: #85050b; /* Heading color */
+    --link-color: #00b32d; /* Link color */
+    --link-hover-color: #004c99; /* Link hover color */
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    font-family: 'Arial', sans-serif;
+    margin: 1em 0;
+}
+
+/* Specific styles for different heading levels */
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.75em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1.25em;
+}
+h6 {
+    font-size: 1em;
+}
+
+/* Style paragraphs */
+p {
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+/* Style for links */
+a {
+    color: var(--link-color);
+    text-decoration: underline; /* Keep underline for text links */
+}
+
+a img {
+    text-decoration: none; /* Remove underline for image links */
+}
+
+/* Style for link hover states */
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Additional styles for social media image links, if necessary */
+.social-media-link img {
+    border: none; /* Additional styling if needed */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Fixed height for the hero section */
+    overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+.hero img {
+    width: 100%; /* Make the image occupy full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block to fill the width */
+}
+
+h1 {
+    position: absolute;
+    top: 20px; /* Positioning from the top */
+    left: 20px; /* Positioning from the left */
+    color: white; /* Text color for readability */
+    z-index: 2; /* Higher z-index to sit above the article */
+}
+
+article {
+    position: absolute;
+    bottom: 20px; /* Position from the bottom */
+    left: 20px; /* Position from the left */
+    background-color: rgba(0, 0, 0, 0.7); /* Background with opacity for readability */
+    color: white; /* Text color for readability */
+    padding: 15px; /* Padding around the text */
+    border-radius: 8px; /* Optional: rounded corners */
+    z-index: 1; /* Lower z-index than the h1, so h1 is on top */
+}
+
+article img {
+    float: right; /* Float the image to the right of the paragraph */
+    max-width: 150px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 15px; /* Space between text and image */
+}
