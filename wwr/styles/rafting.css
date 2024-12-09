@@ -90,3 +90,47 @@ img {
     width: 30px; /* Set size of social icons */
     margin-left: 10px; /* Space between icons */
 }
+/* Employee profile styles */
+#employee-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile {
+    margin: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 150px; /* Adjust as necessary */
+    height: auto;
+    border-radius: 50%;
+}
+/* Comment form styles */
+#comment-form {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
