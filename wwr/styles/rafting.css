@@ -21,6 +21,7 @@ body {
     padding: 20px;
     background-color: #007BFF;
     color: #0a0808;
+    position: relative;
 }
 
 .logo {
@@ -77,7 +78,7 @@ img {
 /* Footer Styles */
 .footer {
     background-color: #1f2792;
-    color: #070505;
+    color: #d8d5d5;
     text-align: right; /* Align content to the right */
     padding: 10px;
 }
@@ -129,9 +130,161 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #4CAF50; /* Green */
+    background-color: #0438a8; /* Green */
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero img {
+    display: flex;
+    display: grid;
+    width: 100%;
+    
+}
+.hero p{
+    float: left;
+    position: absolute;
+    right: 800px;
+    color: #070505;
+}
+.trip img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .trip h1 {
+    width: 350px;
+    top: 80px;
+    left: 30px;
+    background: none;
+    font-weight: bold;
+    word-spacing: 12px;
+    text-align: left;
+    text-decoration: underline;
+    color: var(--primary-color);
+  }
+  
+  .trip p {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 149px;
+    height: 89px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    color: #FF3823;
+  }
+  
+  .trip button {
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    width: 95px;
+    height: 49px;
+    padding: 0px 10px 0px 10px;
+    background: #ae23ff;
+    border: var(--secondary-color) 1px solid;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .trip button:hover, .grid button:hover {
+    background-color: rgb(4, 0, 255);
+  }
+  
+  .trips  {
+    display: grid;
+    grid-gap: 2px ;
+    background-color: var(--accent2-color);
+    margin: 15px 0 15px 0;
+    width: 530px;
+  }
+  
+  .trips h2 {
+    grid-row: 1/2 ;
+    text-decoration: underline;
+    text-align: left;
+    padding: 10px 0px 20px 10px;
+  }
+  
+  .trips p {
+    padding: 10px;
+    font-style: italic;
+  }
+  
+  .trips h3 {
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .trips img {
+    float: left;
+    width: 30em;
+    height: 237px;
+    padding: 0px 5px 25px 25px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .trip1 {
+    grid-row: 2/3; 
+  }
+  
+  .trip2 {
+    grid-row: 3/4; 
+  }
+  
+  .grid {
+    position: absolute;
+    top: 620px;
+    left: 540px;
+    padding-bottom: 40px;
+    background-color: var(--secondary-color);
+    border: #C0C0C0 solid 1px;
+  
+  }
+  
+  .grid table{
+    width: 400px;
+    height: 332px;
+    color: #37e2da;
+  }
+  
+  td {
+    border: var(--secondary-color) solid 2px;
+    padding-left: 5px;
+  }
+  
+  .grid table tr:first-of-type {
+    background-color: var(--primary-color);
+  }
+  
+  .grid button {
+    position: relative;
+    top: 30px;
+    left: 8rem;
+    width: 147px;
+    height: 34px;
+    padding: 0px 10px 0px 10px;
+    background: #8103a0a8;
+    border: var(--secondary-color) solid 1px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
