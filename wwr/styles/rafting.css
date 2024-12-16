@@ -92,11 +92,19 @@ img {
     width: 30px; /* Set size of social icons */
     margin-left: 10px; /* Space between icons */
 }
+.social{
+  display: flex;
+  width: 30px;
+  align-items: flex-end;
+  flex-direction: row;
+}
 /* Employee profile styles */
 #employee-profiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    grid-gap: 0.2rem;
+    font-size: .8rem;
 }
 
 .profile {
@@ -111,9 +119,13 @@ img {
 }
 /* Comment form styles */
 #comment-form {
-    margin: 20px auto;
-    max-width: 400px;
-    text-align: left;
+  width: 620px;
+  margin: 0 auto;
+  padding: 0.9rem;
+  margin-bottom: 20px;
+  border: 1px dashed var(--accent1-color);
+  border-radius: 0.5rem;
+  display: grid;
 }
 
 form label {
@@ -122,7 +134,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 620px;
     padding: 8px;
     margin: 5px 0 20px;
     border: 1px solid #ccc;
